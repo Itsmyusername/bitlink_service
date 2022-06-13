@@ -59,7 +59,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
     url = args.url
     bitly_api_token = os.getenv('BITLY_API_TOKEN')
-    #url = input('Введите сайт для создания короткой ссылки: ')
 
     if is_bitlink(bitly_api_token, url):
         bit_count_click = count_clicks(bitly_api_token, url)
